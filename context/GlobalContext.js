@@ -14,7 +14,6 @@ export function GlobalProvider({children}) {
     const {data: session} = useSession();
 
     useEffect(() => {
-        console.log('use effect çalıştı')
         if(session && session.user) {
             getUnreadMessageCount().then((res) => {
                 if(res.count) setUnreadCount(res.count)
