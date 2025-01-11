@@ -4,8 +4,8 @@ import InfoBoxes from "@/components/InfoBoxes";
 import FeaturedProperties from "@/components/FeaturedProperties";
 import connectDB from "@/config/database";
 
-const HomePage = async () => {
-    await connectDB()
+const HomePage =  () => {
+     connectDB()
     return ( <>
        <Hero />
        <InfoBoxes />
